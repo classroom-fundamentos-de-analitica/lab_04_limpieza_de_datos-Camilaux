@@ -29,4 +29,3 @@ def clean_data():
 
     return df
 
-print(clean_data())
