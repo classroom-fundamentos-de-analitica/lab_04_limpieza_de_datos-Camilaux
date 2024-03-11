@@ -53,9 +53,8 @@ def clean_data():
     df["línea_credito"] = df["línea_credito"].str.translate(
         str.maketrans("", "", "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~")
     )
+    df['línea_credito'] = df['línea_credito'].replace('empresarialed','empresarial ed')
 
     df = df.drop_duplicates()
 
     return df
-
-clean_data()
