@@ -58,3 +58,4 @@ def clean_data():
 
     return df
 
+clean_data()
